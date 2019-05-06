@@ -2,7 +2,7 @@
 class ControllerCommonFooter extends Controller {
 	public function index() {
 		$this->load->language('common/footer');
-		$this->load->model('common/footer');
+		// $this->load->model('common/footer');
 		 // $this->load->model('setting/setting');
 
 		// $FooterText = $this->model_common_footer->getFooterText;
