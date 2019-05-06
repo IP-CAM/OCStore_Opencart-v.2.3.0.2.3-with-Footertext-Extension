@@ -2,9 +2,15 @@
 class ControllerCommonFooter extends Controller {
 	public function index() {
 		$this->load->language('common/footer');
+		$this->load->model('common/footer');
+		 // $this->load->model('setting/setting');
+
+		// $FooterText = $this->model_common_footer->getFooterText;
 
 		$data['scripts'] = $this->document->getScripts('footer');
 
+		// $data['footertext'] = $this->model_common_footer->getFooterText();
+		$data['footertext'] = $this->config->get('config_footertext');
 		$data['text_information'] = $this->language->get('text_information');
 		$data['text_service'] = $this->language->get('text_service');
 		$data['text_extra'] = $this->language->get('text_extra');
@@ -73,5 +79,7 @@ class ControllerCommonFooter extends Controller {
 		}
 
 		return $this->load->view('common/footer', $data);
+
+
 	}
 }
