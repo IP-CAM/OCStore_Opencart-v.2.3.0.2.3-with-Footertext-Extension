@@ -39,15 +39,15 @@
       </div>
     </div>
     <hr>
-    <p><?php echo $powered; ?></p>
+    <div class="col-sm-4">
+      <p><?php echo $powered; ?></p>
+    </div>
+    <div class="col-sm-8">
+      <p><? echo $footertext; ?></p>
+    </div>
   </div>
 </footer>
 
-<!--
-OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
-Please donate via PayPal to donate@opencart.com
-//-->
 
-<!-- Theme created by Welford Media for OpenCart 2.0 www.welfordmedia.co.uk -->
 
 </body></html>
